@@ -35,6 +35,10 @@ class App < Sinatra::Base
       result = @n1 + @n2 
     elsif @o == "multiply"
       result = @n1 * @n2
+    elsif @o == "divide"
+      result = @n1 / @n2
+    elsif @o == "subtract"
+      result = @n1 - @n2
     end
     result.to_s
   end
