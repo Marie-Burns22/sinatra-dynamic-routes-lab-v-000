@@ -28,11 +28,15 @@ class App < Sinatra::Base
   end
   
   get '/:operation/:number1/:number2' do
-    @o = params[:operation].to_s
+    @o = params[:operation]
     @n1 = params[:number1].to_i
     @n2 = params[:number2].to_i
-    result = @n1.method(@o).(@n2)
-    result.to_s
+    if @o == "add"
+      puts @n1 + @n2 
+    elsif @ == "multiply"
+      puts @n1 * @n2
+    end
+      
   end
 
 end
