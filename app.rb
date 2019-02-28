@@ -33,7 +33,7 @@ class App < Sinatra::Base
     @n2 = params[:number2].to_i
     if @o == "add"
       puts @n1 + @n2 
-    elsif @ == "multiply"
+    elsif @o == "multiply"
       puts @n1 * @n2
     end
       
