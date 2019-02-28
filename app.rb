@@ -36,7 +36,7 @@ class App < Sinatra::Base
     elsif @o == "multiply"
       result = @n1 * @n2
     end
-    "#{result}"
+    result.to_s
   end
 
 end
